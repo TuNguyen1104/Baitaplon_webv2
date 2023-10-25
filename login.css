@@ -56,15 +56,18 @@ form{
   position: relative;
 }
 #hide_show{
-  position: absolute;
-  top: 54%;
-  right: 15px;
-
+  position: relative;
+  /* top: 40%; */
+  left: 240px;
+  bottom: 40px;
+  opacity: 0.8;
 }
 #hide_showsignup{
-  position: absolute;
-  top: 50%;
-  right: 15px;
+  position: relative;
+  /* top: 40%; */
+  left: 260px;
+  bottom: 28px;
+  opacity: 0.8;
 }
 .login__container form button {
   padding: 10px;
