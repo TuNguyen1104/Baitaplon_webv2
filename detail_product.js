@@ -499,9 +499,9 @@ let info_product=[
         "loreVN": " Giống như nhiều người trong cộng đồng vật lý lý thuyết, Giáo sư Hawking luôn tìm cách khám phá chén thánh của khoa học – Lý thuyết về mọi thứ. Với phong cách dễ tiếp cận và dí dỏm của mình, ông hướng dẫn chúng ta tiến từng bước một để khám phá bí mật của vũ trụ – từ siêu trọng lực đến siêu đối xứng, từ lý thuyết lượng tử đến lý thuyết M, từ phép toàn ảnh đến tính đối ngẫu. Và ông đưa chúng ta đến hậu trường của một trong những cuộc phiêu lưu trí tuệ thú vị nhất của ông khi tìm cách “kết hợp Lý thuyết tương đối tổng quát của Einstein và ý tưởng đa lịch sử của Richard Feynman thành một lý thuyết thống nhất hoàn chỉnh sẽ mô tả mọi thứ xảy ra trong vũ trụ.”",
         "loreEN" : "Like many in the theoretical physics community, Professor Hawking has always sought to discover the holy grail of science – the Theory of Everything. In his accessible and witty style, he guides us step by step to uncover the secrets of the universe – from supergravity to supersymmetry, from quantum theory to M-theory, from holography to duality. And he takes us behind the scenes of one of his most exciting intellectual adventures as he sought to “combine Einstein's General Theory of Relativity and Richard Feynman's multiple history ideas into a unified theory.” complete description of everything that happens in the universe.”",
         "img1":"/image/productAcademic2.png",
-        "img2":"/image/vutru2.jpg",
-        "img3":"/image/vutru3.jpg",
-        "img4":"/image/vutru4.jpg"
+        "img2":"/image/vutru2.jpeg",
+        "img3":"/image/vutru3.jpeg",
+        "img4":"/image/vutru4.jpeg"
     }
     ,
     {
