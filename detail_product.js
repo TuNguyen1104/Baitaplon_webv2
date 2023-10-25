@@ -358,8 +358,8 @@ let info_product=[
         "price1" : "25,999 đ",
         "price2" : "35,000 đ" , 
         "sale" : "-26%",
-        "loreVN": "Bảy viên ngọc rồng là một câu chuyện về Goku, một cậu bé có sức mạnh siêu nhiên, và cuộc hành trình của anh để tìm kiếm viên ngọc rồng Dragon Ball, có khả năng thực hiện điều ước. Trong hành trình này, Goku gặp nhiều đối thủ mạnh mẽ và đồng hành, bao gồm Vegeta, Piccolo và nhiều nhân vật khác. Cuốn truyện xoay quanh việc chiến đấu và sử dụng viên ngọc rồng để bảo vệ hòa bình trên trái đất và đối phó với các thế lực ác độc như Frieza, Cell và Majin Buu. Câu chuyện đã trở thành một biểu tượng của văn hóa manga và anime.",
-        "loreEN" : "Dragon Ball is a story about Goku, a boy with supernatural powers, and his journey to find the Dragon Ball, which has the ability to grant wishes. During this journey, Goku meets many powerful opponents and companions, including Vegeta, Piccolo and many other characters. The story revolves around fighting and using the Dragon Balls to protect peace on Earth and deal with evil forces such as Frieza, Cell and Majin Buu. The story has become an icon of manga and anime culture.",
+        "loreVN": " kể về Goku, một chiến binh Saiyan, và hành trình của anh để tìm Kiếm viên Ngọc Rồng, chiến đấu với nguy cơ toàn cầu và trở thành người mạnh nhất trong vũ trụ.",
+        "loreEN" : " is the story of Goku, a Saiyan warrior, and his quest to find the Dragon Balls, battle global threats, and become the most powerful being in the universe.",
         "img1":"/image/productComics6.png",
         "img2":"/image/ngocrong2.jpg",
         "img3":"/image/ngocrong3.jpg",
@@ -381,8 +381,8 @@ let info_product=[
         "price1" : "18,500 đ",
         "price2" : "28,000 đ" , 
         "sale" : "-34%",
-        "loreVN": " Đôrêmon là một chú mèo máy được Nôbita, cháu ba đời của Nôbita gửi về quá khứ cho ông mình để giúp đỡ Nôbita tiến bộ, tức là cũng sẽ cải thiện hoàn cảnh của con cháu Nôbita sau này. Còn ở hiện tại, Nôbita là một cậu bé luôn thất bại ở trường học, và sau đó là thất bại trong công việc, đẩy gia đình và con cháu sau này vào cảnh nợ nần. Các câu chuyện trong Đôrêmon thường có một công thức chung, đó là xoay quanh những rắc rối hay xảy ra với cậu bé Nôbita lớp bốn, nhân vật chính thứ nhì của bộ truyện. Đôrêmon có một chiếc túi thần kỳ trước bụng với đủ loại bảo bối của tương lai.Cốt truyện thường gặp nhất sẽ là Nôbita trở về nhà khóc lóc với những rắc rối mà cậu gặp phải ở trường hoặc với bạn bè. Sau khi bị cậu bé van nài hoặc thúc giục, Đôrêmon sẽ đưa ra một bảo bối giúp Nôbita giải quyết những rắc rối của mình.Tuy nhiên thường thì ở cuối mỗi câu chuyện, những ai sử dụng sai mục đích bảo bối sẽ phải chịu hậu quả do mình gây ra, và người đọc sẽ rút ra được bài học đạo đức từ đó.",
-        "loreEN" : "Doraemon is a robot cat sent back to the past by Nobita, Nobita's third-generation grandson, to help Nobita progress, which means it will also improve the circumstances of Nobita's descendants in the future. In the present, Nobita is a boy who always fails in school, and then fails at work, pushing his family and future descendants into debt. The stories in Doraemon often have a common formula, which revolves around the troubles that often happen to fourth-grade boy Nobita, the second main character of the series. Doraemon has a magical bag in front of his stomach with all kinds of future treasures.The most common plot will be Nobita returning home crying about the trouble he encountered at school or with friends. After being begged or urged by the boy, Doraemon will offer a treasure to help Nobita solve his problems, either in retaliation or to brag to his friends. However, it is usually at the end of each sentence. In the story, those who misuse the treasure will have to suffer the consequences of their actions, and readers will learn a moral lesson from it.",
+        "loreVN": " Doraemon là một bộ truyện tranh và anime nổi tiếng của Nhật Bản về một chú mèo máy tên là Doraemon và cậu bé Nobita. Doraemon đến từ tương lai để giúp Nobita vượt qua các khó khăn và thách thức trong cuộc sống hàng ngày.",
+        "loreEN" : "Doraemon is a popular Japanese manga and anime series about a robotic cat named Doraemon and a boy named Nobita. Doraemon comes from the future to help Nobita overcome various challenges and difficulties in his daily life.",
         "img1":"/image/productComics7.jpg",
         "img2":"/image/doremon2.jpg",
         "img3":"/image/doremon3.jpg",
@@ -499,9 +499,9 @@ let info_product=[
         "loreVN": " Giống như nhiều người trong cộng đồng vật lý lý thuyết, Giáo sư Hawking luôn tìm cách khám phá chén thánh của khoa học – Lý thuyết về mọi thứ. Với phong cách dễ tiếp cận và dí dỏm của mình, ông hướng dẫn chúng ta tiến từng bước một để khám phá bí mật của vũ trụ – từ siêu trọng lực đến siêu đối xứng, từ lý thuyết lượng tử đến lý thuyết M, từ phép toàn ảnh đến tính đối ngẫu. Và ông đưa chúng ta đến hậu trường của một trong những cuộc phiêu lưu trí tuệ thú vị nhất của ông khi tìm cách “kết hợp Lý thuyết tương đối tổng quát của Einstein và ý tưởng đa lịch sử của Richard Feynman thành một lý thuyết thống nhất hoàn chỉnh sẽ mô tả mọi thứ xảy ra trong vũ trụ.”",
         "loreEN" : "Like many in the theoretical physics community, Professor Hawking has always sought to discover the holy grail of science – the Theory of Everything. In his accessible and witty style, he guides us step by step to uncover the secrets of the universe – from supergravity to supersymmetry, from quantum theory to M-theory, from holography to duality. And he takes us behind the scenes of one of his most exciting intellectual adventures as he sought to “combine Einstein's General Theory of Relativity and Richard Feynman's multiple history ideas into a unified theory.” complete description of everything that happens in the universe.”",
         "img1":"/image/productAcademic2.png",
-        "img2":"/image/vutru2.jpeg",
-        "img3":"/image/vutru3.jpeg",
-        "img4":"/image/vutru4.jpeg"
+        "img2":"/image/vutru2.jpg",
+        "img3":"/image/vutru3.jpg",
+        "img4":"/image/vutru4.jpg"
     }
     ,
     {

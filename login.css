@@ -50,21 +50,21 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+form{
+  position: relative;
 }
 #hide_show{
-  position: relative;
-  /* top: 40%; */
-  left: 240px;
-  bottom: 40px;
-  opacity: 0.8;
+  position: absolute;
+  top: 54%;
+  right: 15px;
+
 }
 #hide_showsignup{
-  position: relative;
-  /* top: 40%; */
-  left: 260px;
-  bottom: 28px;
-  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  right: 15px;
 }
 .login__container form button {
   padding: 10px;
