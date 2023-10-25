@@ -407,7 +407,7 @@ let info_product=[
         "loreVN": " kể về Shinichi Kudo, một thám tử tài năng trẻ bị thu nhỏ thành một đứa trẻ sau khi bị một tổ chức tội phạm bí ẩn đầu độc. Dưới tên Conan Edogawa, anh tiếp tục giải quyết các vụ án và khám phá bí mật của tổ chức đó.",
         "loreEN" : "is about Shinichi Kudo, a young prodigy detective who is shrunk into a child after being poisoned by a mysterious criminal organization. Under the name Conan Edogawa, he continues to solve cases and uncover the secrets of the organization.",
         "img1":"/image/productComics8.jpg",
-        "img2":"/image/conan2.jpg",
+        "img2":"/image/Conan2.jpg",
         "img3":"/image/conan3.jpg",
         "img4":"/image/conan4.jpg"
     }
