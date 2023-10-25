@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="baitaplon.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"/>
+        <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "160618900463778");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    </head>
+    <body>
+        <img src="/image/wallimg.jpg" style="width: 100%;" id="first_img">
+        <div class="nav">
+            <ul>
+                <a href="index.html">
+                    <li id="logo_fhs"><img src="/image/logo.png" style="width: 200px;"></li>
+                </a>
+                <li>
+                    <input id="searchbox" onkeyup="search()">
+                    <div class="iconsearch">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="display">
+                        <img src="/image/no_result_found.jpg" id="pic">
+                        <ul>
+                            <li class="tb">
+                                <p class="VN"> Đã Tìm Thấy <a id="sl">0</a> Kết Quả</p>
+                                <p class="EN"> <a id="sl">0</a> Result Found</p>
+                            </li>
+                            <li class="product_search" id="1">
+                                <img src="/image/productNovel1.jpg">
+                                <p class="VN">Cây Cam Ngọt Của Tôi</p>
+                                <p class="EN">My Sweet Orange Tree</p>
+                                <p>Jose Mauro de Vasconcelos</p>
+                                <a>76,000</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="11">
+                                <img src="/image/productComics1.jpg">
+                                <p class="VN">Mùa Hè Bất Tận</p>
+                                <p class="EN"> Endless Summer</p>
+                                <p>Lâm Hoàng Trúc</p>
+                                <a>123,000</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="12">
+                                <img src="/image/productComics2.jpg">
+                                <p class="VN">Bất Tử Và Bất Hạnh</p>
+                                <p class="EN">Undead Unluck</p>
+                                <p>Totsuka Yoshifumi</p>
+                                <a>45,999</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="13">
+                                <img src="/image/productComics3.jpg">
+                                <p class="VN">Naruto Truyền Kỳ</p>
+                                <p class="EN">Naruto Shippuden</p>
+                                <p>Kishimoto Seishi</p>
+                                <a>23,750</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="14">
+                                <img src="/image/productComics4.png">
+                                <p class="VN">Đảo Hải Tặc</p>
+                                <p class="EN">One Piece</p>
+                                <p>Oda Eiichiro</p>
+                                <a>23,750</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="15">
+                                <img src="/image/productComics5.jpg">
+                                <p class="VN">Bleach-Huyết Chiến Ngàn Năm</p>
+                                <p class="EN">Bleach-One Thousand Year Blood War</p>
+                                <p>Kubo Taito</p>
+                                <a>28,350</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="16">
+                                <img src="/image/productComics6.png">
+                                <p class="VN">Bảy Viên Ngọc Rồng</p>
+                                <p class="EN"> Dragon Ball </p>
+                                <p>Toriyama Akira</p>
+                                <a>25,999</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="17">
+                                <img src="/image/productComics7.jpg">
+                                <p class="VN" style="font-size: 17px;">Doraemon - Chú Mèo Máy Đến Từ Tương Lai</p>
+                                <p class="EN" style="font-size: 19px;">Doraemon - Gadget Cat from the Future </p>
+                                <p>Fujiko Fujio</p>
+                                <a>18,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="18">
+                                <img src="/image/productComics8.jpg">
+                                <p class="VN">Thám Tử Lừng Danh Conan</p>
+                                <p class="EN"> Detective Conan </p>
+                                <p>Aoyama Gōshō</p>
+                                <a>24,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="19">
+                                <img src="/image/productComics9.jpg">
+                                <p class="VN">Anh Hùng OnePunch</p>
+                                <p class="EN">One Punch Man </p>
+                                <p>One & Yusuke Murata</p>
+                                <a>24,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="20">
+                                <img src="/image/productComics10.jpg">
+                                <p class="VN">Gintama - Linh Hồn Bạc</p>
+                                <p class="EN">Gintama - Silver Soul</p>
+                                <p>Hideaki Sorachi</p>
+                                <a>24,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="2">
+                                <img src="/image/productNovel2.png">
+                                <p class="VN">Harry Potter và Hoàng Tử Lai</p>
+                                <p class="EN">Harry Potter and the Half-Blood Prince</p>
+                                <p>J.K.Rowling</p>
+                                <a>98,000</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "3">
+                                <img src="/image/productNovel3.png">
+                                <p class="VN">Bí Kíp Luyện Rồng</p>
+                                <p class="EN">How To Train Your Dragon</p>
+                                <p>Cressida Cowell</p>
+                                <a>88,150</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "4">
+                                <img src="/image/productNovel4.png">
+                                <p class="VN">Moby Dick - Cá Voi Trắng </p>
+                                <p class="EN">Moby Dick or The Whale</p>
+                                <p>Herman Melville</p>
+                                <a>320,150</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "5">
+                                <img src="/image/productNovel5.png">
+                                <p class="VN">Suối Nguồn </p>
+                                <p class="EN">The Fountainhead</p>
+                                <p>Ayn Rand</p>
+                                <a>359,000</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "6">
+                                <img src="/image/productNovel6.png">
+                                <p class="VN">Phía Nam Biên Giới , Phía Tây Mặt Trời</p>
+                                <p class="EN">South of the Border , West of the Sun</p>
+                                <p>Haruki Murakami</p>
+                                <a>112,000</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "7">
+                                <img src="/image/productNovel7.png">
+                                <p class="VN">Nhà Giả Kim</p>
+                                <p class="EN">The Alchemist</p>
+                                <p>Paulo Coelho</p>
+                                <a>69,999</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "8">
+                                <img src="/image/productNovel8.png">
+                                <p class="VN">Bố Già</p>
+                                <p class="EN">The Godfather</p>
+                                <p>Mario Puzo</p>
+                                <a>110,000</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "9">
+                                <img src="/image/productNovel9.png">
+                                <p class="VN">Bắt Trẻ Đồng Xanh</p>
+                                <p class="EN">The Catcher in the Rye</p>
+                                <p>J. D. Salinger</p>
+                                <a>76,000</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "10">
+                                <img src="/image/productNovel10.png">
+                                <p class="VN">Nanh Trắng</p>
+                                <p class="EN">White Fang</p>
+                                <p>Jack London</p>
+                                <a>46,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id= "21">
+                                <img src="/image/ProductAcademic1.png">
+                                <p class="VN">Thế Giới Phẳng</p>
+                                <p class="EN">The World is Flat</p>
+                                <p>Thomas L. Friedman</p>
+                                <a>350,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "22">
+                                <img src="/image/productAcademic2.png">
+                                <p class="VN">Vũ Trụ Trong Vỏ Hạt Dẻ</p>
+                                <p class="EN">The Universe In A Nutshell</p>
+                                <p>Stephen Hawking</p>
+                                <a>250,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "23">
+                                <img src="/image/productAcademic3.png">
+                                <p class="VN">Sapiens : Lược Sử Loài Người</p>
+                                <p class="EN">Sapiens : A Brief History of Humankind</p>
+                                <p>Yuvel Noah Harari</p>
+                                <a>210,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="24">
+                                <img src="/image/productAcademic4.png">
+                                <p class="VN">Về Nguồn Gốc Các Loài</p>
+                                <p class="EN">On The Origin of Species</p>
+                                <p>Charles Darwin</p>
+                                <a>120,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id="25">
+                                <img src="/image/productAcademic5.png">
+                                <p class="VN">Những Nhà Khám Phá</p>
+                                <p class="EN" style="font-size: 11px;">The Discoverers : A history of Man’s search to know
+                                    his world and himself </p>
+                                <p>Daniel J. Boorstin</p>
+                                <a>220,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "26">
+                                <img src="/image/productAcademic6.png">
+                                <p class="VN">Đắc Nhân Tâm</p>
+                                <p class="EN" style="font-size: 19px;">How to win friends and Influence People</p>
+                                <p>Dale Carnegie</p>
+                                <a>56,900</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id= "27">
+                                <img src="/image/productAcademic7.png">
+                                <p class="VN">Súng , Vi Trùng và Thép</p>
+                                <p class="EN">Guns , Germs and Steel </p>
+                                <p>Jared Diamond</p>
+                                <a>68,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id= "28">
+                                <img src="/image/productAcademic8.png">
+                                <p class="VN">Lược Sử Thời Gian</p>
+                                <p class="EN">A Brief History of Time </p>
+                                <p>Stephen Hawking</p>
+                                <a>118,500</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id ="29">
+                                <img src="/image/productAcademic9.png">
+                                <p class="VN">Hành Trình Về Phương Đông</p>
+                                <p class="EN">Journey to the East </p>
+                                <p>Baird T. Spalding</p>
+                                <a>48,650</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                            <li class="product_search" id = "30">
+                                <img src="/image/productAcademic10.png">
+                                <p class="VN">Những Tù Nhân Của Địa Lý</p>
+                                <p class="EN">Prisoners of Geography</p>
+                                <p>Tim Marshall</p>
+                                <a>198,650</a><br>
+                                <a>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="tag_tb">
+                    <i class="fas fa-bell"></i>
+                    </br>
+                    <p class="VN">Liên Hệ </p>
+                    <p class="EN">Notification</p>
+                </li>
+                <li id="tag_gh">
+                    <a style="text-decoration: none;color: black;" href="cart.html" class="cart" data-total="0"><i
+                            class="fas fa-shopping-cart" style=" margin-left: 18px;"></i>
+                        <br>
+                        <p class="VN">Giỏ Hàng</p>
+                        <p class="EN" style="margin-right: 6px;"> My Cart</p>
+                    </a>
+                </li>
+                <li id="tag_tk">
+                    <div class="profile">
+                        <i class="fas fa-user" style="margin-left: 22px;"></i>
+                        <br>
+                        <p class="VN">Tài Khoản</p>
+                        <p class="EN" style="margin-right: 14px;opacity: 0.6;margin-left: 12px;">User</p>
+                        <ul class="profile-child">
+                            <li> <a href="login.html">Đăng nhập</a> </li>
+                            <li> <a href="signup.html">Đăng ký</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="tag_dich">
+                    <button id="translate_icon" onclick="hide()"><img id="iconEVN" src="/image/iconVN.png"
+                            style="opacity: 1;"><i class="fas fa-chevron-down"></i> </button>
+                    <div id="translate">
+                        <ul>
+                            <li id="VNicon"><img src="/image/iconVN.png"><i>VN</i></li>
+                            <li id="ENicon"><img src="/image/iconE.png"><i>EN</i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="bars"><i class="fas fa-bars"></i></li>
+            </ul>
+        </div>
+        <!-- --------------- -->
+        <div class="mobile_bars">
+            <ul>
+                <img src="/image/logo.png">
+                <li class="X"><i class="fas fa-times"></i></li>
+                <hr>
+                <li><a href="index.html" target="_self"><i class="fas fa-home"></i>
+                        <p class="VN"> Trang Chủ</p>
+                        <p class="EN">Home</p>
+                    </a></li>
+                <li><a><i class="fas fa-shopping-cart"></i>
+                        <p class="VN"> Giỏ Hàng</p>
+                        <p class="EN">Cart</p>
+                    </a></li>
+                <li><a><i class="fas fa-bell"></i>
+                        <p class="VN"> Thông Báo</p>
+                        <p class="EN">Notification</p>
+                    </a></li>
+                <li><a><i class="fas fa-phone"></i>
+                        <p class="VN">Liên Hệ Với Chúng Tôi</p>
+                        <p class="EN">Contact Us</p>
+                    </a></li>
+                <li id="ts_mobile"><a><i class="fas fa-globe"></i>
+                        <p class="VN">Ngôn Ngữ</p>
+                        <p class="EN">Language</p>
+                    </a>
+                    <div class="mobile_translate">
+                        <img src="/image/iconVN.png" id="VNicon_mobile">
+                        <p>VN</p>
+                        <img src="/image/iconE.png" id="ENicon_mobile">
+                        <p>EN</p>
+                    </div>
+                </li>
+            </ul>
+        </div>>
+       
+       <main>
+        <form action="" onsubmit="check();">
+            <h2>FEEDBACK</h2><br>
+            <label id="name"><p class="VN" style="text-align: center;">Họ và tên:</p><p class="EN" style="text-align: center;">Name</p></label></p><br>
+            <input type="text" id="name" name="name" placeholder="Nhập họ và tên"><br>
+            <label id="city"><p class="VN" style="text-align: center;">Tỉnh/Thành Phố:</p><p class="EN" style="text-align: center;">City</p></label><br>
+            <select id="city" name="city">
+              <option value="lc">Lào Cai</option>
+              <option value="sl">Sơn La</option>
+              <option value="db">Điện Biên</option>
+              <option value="lc">Lai Châu</option>
+              <option value="yb">Yên Bái</option>
+              <option value="bn">Bắc Ninh</option>
+              <option value="bg">Bắc Giang</option>
+              <option value="bk">Bắc Kạn</option>
+              <option value="pt">Phú Thọ</option>
+              <option value="ls">Lạng Sơn</option>
+              <option value="tq">Tuyên Quang</option>
+              <option value="hn">Hà Nội</option>
+              <option value="tn">Thái Nguyên</option>
+              <option value="hg">Hà Giang</option>
+              <option value="hd">Hải Dương</option>
+              <option value="hp">Hải Phòng</option>
+              <option value="hy">Hưng Yên</option>
+              <option value="qn">Quảng Ninh</option>
+            </select>           
+            <label for="rate"><p class="VN">Đánh giá:</p><p class="EN">Rate:</p></label>
+            <input id="rate" name="rate" placeholder="Từ 1-5" style="display: inline;"></input><br><br>   
+            <label for="think"><p class="VN" style="text-align: center;">Cảm nghĩ:</p><p class="EN" style="text-align: center;">Comments</p></label>
+            <textarea name="think" id="think" cols="30" rows="5"></textarea>  
+          <input type="submit" name="submit" id="submit" value="Send">
+        </form>
+
+        </main>
+        <div class="box1">
+          <div class="col--1">
+            <h3><p class="VN">LIÊN HỆ</p><p class="EN">CONTACT</p></h3><br>
+            <i class="fa-brands fa-google"><p class="a">tttt123@gmail.com</p></i><br>
+            <i class="fa-brands fa-yahoo"><p class="a">tttt1233@yahoo.com</p></i><br>
+            <i class="fa-solid fa-phone"><p class="a">1-800-948-748</p></i>
+         </div>
+         <div class="col--2">
+            <h3><p class="VN">DỊCH VỤ</p><p class="EN">SERVICES</p></h3><br>
+             <a href="" class="a"><p class="VN">Tài khoản miễn phí</p><p class="EN">Free account</p></a>
+             <a href="" class="a"><p class="VN">Tin tức</p><p class="EN">News</p></a>
+             <a href="" class="a"><p>E-books</p></a>
+         </div>
+         <div class="col--3">
+            <h3><p class="VN">TÀI NGUYÊN</p><p class="EN">RESOURCES</p></h3><br>
+             <a href="" class="a"><p class="VN">Trung tâm trợ giúp</p><p class="EN">Help center</p></a>
+             <a href="" class="a"><p>Blog</p></a>
+             <a href="" class="a"><p class="VN">Cộng đồng</p><p class="EN">Community</p></a>
+         </div>
+         <div class="col--4">
+            <h3><p class="VN">HỖ TRỢ</p><p class="EN">HELP</p></h3><br>
+            <a href="" class="a"><p class="VN">Hướng dẫn sử dụng</p><p class="EN">Guide</p></a>
+            <a href="" class="a"><p class="VN">Cách tạo tài khoản</p><p class="EN">How to create account</p></a>
+            <a href="" class="a"><p class="VN">Cách tải E-books</p><p class="EN">How to download E-books</p></a>
+         </div>
+        </div><br><br>
+        <div class="overlay"></div>
+        <footer>
+            <div class="row">
+                <div class="box">
+                    <div class="col-1">
+                        <h1><p class="VN">THEO DÕI CHÚNG TÔI</p><p class="EN">FOLLOW US</p></h1><br>                       
+                         <i class="fab fa-facebook-f"></i>
+                         <i class="fab fa-instagram"></i>
+                         <i class="fab fa-youtube"></i>
+                         <i class="fab fa-whatsapp"></i>   
+                         <i class="fab fa-snapchat"></i>              
+                    </div>
+                    <div class="col-2">
+                        <h1 class="VN">DANH MỤC</h1><h1 class="EN">CATEGORY</h1><br>
+                        <a href="#"><p class="VN">Truyện tranh</p><p class="EN">Comics</p></a><br>
+                        <a href="#"><p class="VN">Tiểu thuyết</p><p class="EN">Novels</p></a><br>
+                        <a href="#"><p class="VN">Khoa học thường thức</p><p class="EN">Life sciences</p></a><br>
+                        <a href="#"><p class="VN">Sách tham khảo</p><p class="EN">Reference books</p></a>
+                    </div>
+                    <div class="col-3">
+                        <h1 class="VN">HỖ TRỢ</h1><h1 class="EN">HELP</h1><br>
+                        <a href="#"><p class="VN">Điều khoản sử dụng</p><p class="EN">Terms of use</p></a><br>
+                        <a href="#"><p class="VN">Đường dây nóng</p><a href="#"><p class="EN">Hotline</p></a><br>
+                        <a href="#"><p class="VN">Chính sách hoàn tiền</p><p class="EN">Refund policy</p></a><br>
+                        <a href="#"><p class="VN">Cách thức mua hàng</p><p class="EN">How to purchase</p></a><br>
+                        <a href="#"><p class="VN">Chính sách bảo mật tài khoản</p><p class="EN">Account security policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách bảo mật thanh toán</p><p class="EN">Payment security policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách quảng cáo</p><p class="EN"> Advertising policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách bảo hành-bồi hoàn</a><p class="EN">Warranty-refund</p></a><br>
+                        <a href="#"><p class="VN">Chính sách vận chuyển</p><p class="EN">Shipping policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách khách sỉ</p><p class="EN">Wholesale policy</p></a><br>
+                </div>
+                <div class="col-4">
+                     <h1><p class="VN">THANH TOÁN</p><p class="EN">PAYMENT</p></h1><br>
+                     <p class="VN" style="text-align: center; text-decoration: underline;">Ví điện tử</p><p class="EN" style="text-align: center; text-decoration: underline;">Electronic wallet</p><br>
+                        <img src="/image/momopay.png" style="width: 70px;">
+                        <img src="/image/shopeepay.png" style="width: 90px;">
+                        <img src="/image/zalopay.png" style="width: 90px;">
+                     <p class="VN" style="text-align: center; text-decoration: underline;">Ngân hàng</p><p class="EN" style="text-align: center; text-decoration: underline;">Bank</p><br>
+                    <img src="/image/bidv.png" style="width: 100px;">
+                    <img src="/image/agribank.png" style="width: 70px;">
+                    <img src="/image/techcombank.png" style="width: 80px;">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="box">
+                <div class="col-6">
+                    <h1><p class="VN">VẬN CHUYỂN</p><p class="EN">SHIPPING</p><br>
+                        <img src="/image/ghn.png" style="width: 90px;">
+                        <img src="/image/vnpost.png" style="width: 90px;">
+                </div>
+                <div class="col-5">
+                    <h1><p class="VN">HỆ THỐNG CỬA HÀNG</p><p class="EN">STORE SYSTEMS</p></h1><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/V%C4%83n+Mi%C3%AA%CC%81u+%E2%80%93+Qu%C3%B4%CC%81c+T%C6%B0%CC%89+Gia%CC%81m/@21.0281175,105.8356692,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab9926e7bd67:0x580e078874d5df1e!8m2!3d21.0281175!4d105.8356692!16zL20vMGI5aGp6?entry=ttu"><p class="VN">Cơ sở I: Số 58 Phố Quốc Tử Giám, Phường Văn Miếu, Quận Đống Đa, TP Hà Nội, Việt Nam</p><p class="EN">Store I: No. 58 Quoc Tu Giam Street, Van Mieu Ward, Dong Da District, Hanoi City, Vietnam</p></a><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/H%E1%BB%93+G%C6%B0%C6%A1m+(Hoa%CC%80n+Ki%C3%AA%CC%81m)/@21.0079926,105.832805,15z/data=!4m22!1m15!4m14!1m6!1m2!1s0x3135ab976ee4d26b:0xd99e913dac7532ef!2zTE9UVEUgTWFydCBXZXN0IExha2UsIFThuqduZyBCMSwgTE9UVEUgTWFsbCwgMjcyIFbDtSBDaMOtIEPDtG5nLCBRdeG6rW4gVMOieSBI4buTIChWw6BvIGPhu5VuZyA2ODMgTOG6oWMgTG9uZyBRdcOibiwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!2m2!1d105.8117286!2d21.0763015!1m6!1m2!1s0x3135ab9926e7bd67:0x580e078874d5df1e!2zVsSDbiBNacOqzIF1IOKAkyBRdcO0zIFjIFTGsMyJIEdpYcyBbSwgNTggUC4gUXXhu5FjIFThu60gR2nDoW0sIFbEg24gTWnhur91LCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!2m2!1d105.8356692!2d21.0281175!3m5!1s0x3135ac69f861af3f:0x331250d72cd2fa28!8m2!3d21.0284743!4d105.8525795!16s%2Fg%2F1td7ksg7?entry=ttu"><p class ="VN">Cơ sở II: Số 1-8 Phố Lê Thái Tổ, Phường Hàng Trống, Quận Hoàn Kiếm, TP Hà Nội, Việt Nam</p><p class="EN">Store II: No. 1-8 Le Thai To Street, Hang Trong Ward, Hoan Kiem District, Hanoi City, Vietnam</p></a><br>  
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/B%E1%BA%A3o+t%C3%A0ng+3D+Art+In+Paradise/@15.900997,108.1243029,12z/data=!4m15!1m8!3m7!1s0x314219c792252a13:0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!3b1!8m2!3d16.0544068!4d108.2021667!16s%2Fg%2F11bc5hq_qy!3m5!1s0x314217f750645271:0x91c392fc753f0fb0!8m2!3d16.0954282!4d108.2431088!16s%2Fg%2F11d_d3m0pj?entry=ttu"><p class="VN">Cơ sở III: Lô 10, Trần Nhân Tông, Phường Thọ Quang, Quận Sơn Trà, TP Đà Nẵng, Việt Nam</p><p class="EN">Store III: Lot 10, Tran Nhan Tong, Tho Quang Ward, Son Tra District, Da Nang City, Vietnam</p></a><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/B%E1%BA%A3o+t%C3%A0ng+Ch%E1%BB%A9ng+t%C3%ADch+Chi%E1%BA%BFn+tranh/@10.7684393,106.686184,15.25z/data=!4m15!1m8!3m7!1s0x317529292e8d3dd1:0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!3b1!8m2!3d10.8230989!4d106.6296638!16zL20vMGhuNGg!3m5!1s0x31752f30a23708cf:0x7cd94adf2b1474aa!8m2!3d10.7795106!4d106.6920916!16s%2Fm%2F02pt71k?entry=ttu"><p class="VN">Cơ sở IV: Số 1 Lê Lợi, Phường 6, Quận 3, Thành phố Hồ Chí Minh, Việt Nam</p><p class="EN">Store IV: No. 1 Le Loi, Ward 6, District 3, Ho Chi Minh City, Vietnam</p></a><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Homestay+Can+Tho-Green+Sunshine/@10.0341844,105.7163702,13z/data=!4m19!1m8!3m7!1s0x31a0629f6de3edb7:0x527f09dbfb20b659!2zQ-G6p24gVGjGoSwgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!3b1!8m2!3d10.0451618!4d105.7468535!16zL20vMDNmY20z!3m9!1s0x31a089e57c0b50b9:0xc823bfc92f745f4e!5m3!4m1!1i2!5b1!8m2!3d10.0507988!4d105.7487686!16s%2Fg%2F11fqpq78r9?entry=ttu"><p class="VN">Cơ sở V: Số 2 Đường 1, Phường An Thới, Quận Bình Thủy, TP Cần Thơ, Việt Nam</p><p class="EN">Store V: No. 2 Street 1, An Thoi Ward, Binh Thuy District, Can Tho City, Vietnam</p></a><br><br>                                  
+                </div>
+                <div class="col-7">
+                    <h1><p class="VN">TẢI ỨNG DỤNG</p><p class="EN">DOWNLOAD</p></h1><br>
+                    <div class="box-1">
+                        <div class="col-8">
+                            <img src="/image/qr.png" style="width: 100px;">
+                        </div>
+                        <div class="col-9">
+                            <div class="row">
+                                <img src="/image/appstore.png" style="height: 25px;"><br><br>
+                            </div>
+                            <div class="row">
+                                <img src="/image/googleplay.png" style="height: 25px;">
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+            <div class="row"><h2><p class="VN">Bản quyền thuộc về nhóm 15</p><p class="EN">Copyright belongs to group 15</p></h2></div>                 
+        </footer>
+        <script src="mobile_translate.js"></script>
+        <script src="responsive_navbar.js"></script>
+        <script src="search.js"></script>
+        <script src="translate.js"></script>
+        <script src="signup.js"></script>
+</body>
+
+</html>
