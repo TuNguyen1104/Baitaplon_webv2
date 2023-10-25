@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Thanh Toán | FAHASA</title>
+</head>
+
+<body onload="loadCartPay()">
+    <div id="container">
+        <div class="card-left">
+            <div class="main-left">
+                <h1>Thông tin thanh toán</h1>
+                <h5 class="valid_user" id="check_user">Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a></h5>
+                <div class="address-availablev1">
+                    <h3>Sử dụng địa chỉ của bạn <span style="font-size: 10px;text-transform: none;">(Bấm để chọn)</span></h3>
+                    <div onclick="address_available()" class="address-available">
+                        <div class="main-address-pay">
+                            <p class="name-user">Họ và Tên: <span>Tu_Nguyen</span></p>
+                            <p class="email-user">Email: <span>zxcvbn2@gmail.com</span></p>
+                            <p class="phone-user">SĐT: <span>012345678</span></p>
+                            <p class="address-user">Địa chỉ: <span>zxcvbnm</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-addressv1">
+                    <h3 class="add-address"><i class="fa-solid fa-circle-plus"></i>Thêm địa chỉ giao hàng</h3>
+                    <form>
+                        <input type="text" class="name" placeholder="Họ và Tên">
+                        <input type="email" class="email" placeholder="Email" name="email">
+                        <input type="tel" class="phone" placeholder="Điện thoại">
+                        <input type="text" class="address" placeholder="Địa chỉ">
+                        <input type="text" class="province-city" placeholder="Tỉnh/TP">
+                        <input type="text" class="district" placeholder="Quận/Huyện">
+                        <input type="text" class="wards" placeholder="Xã/Phường">
+                    </form>
+                </div>
+                <div class="control">
+                    <a href="cart.html" class="back-cart">
+                        <i class="fa-solid fa-chevron-left"></i> Trở lại giỏ hàng</a>
+                    <div class="method-payment">
+                        <select class="VN" id="payment">
+                            <option>Thanh toán khi nhận hàng</option>
+                            <option>Thanh toán qua ngân hàng</option>
+                        </select>
+                        <button onclick="order_end()" class="btn-pay" type="submit">Đặt Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-right">
+            <div class="wrapper-right">
+                <h2>Đơn Hàng: <span style="color: rgb(218, 36, 36);">0 sản phẩm</span></h2>
+                <div class="main-right" id="product-cart"></div> <!-- Nơi hiện sản phẩm -->
+                <div class="total">
+                    <p>Tổng tiền<br><span>(Lưu ý: Chưa tính phí vận chuyển)</span></p>
+                    <p id="total-payment">0đ</p>
+                </div>
+            </div>
+            <div class="show-product"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="notice-success">
+            <div class="notice">
+                <i class="fa-solid fa-xmark close"></i>
+                <h3>Cảm ơn bạn đã mua hàng</h3>
+                <p>Chúng tôi sẽ gọi điện cho bạn để xác nhận đơn hàng</p>
+            </div>
+        </div>
+    </div>
+    <script src="pay.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css" />
+  <!-- font roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
+
+<body>
+  <div class="loading" id="loadingv1">
+    <img src="/image/ZKZg.gif" alt="loading">
+  </div>
+  <!-- form signup -->
+  <div class="signup" id="register">
+    <div class="signup__container">
+      <h1>Create a support portal account</h1>
+      <form action="">
+        <h5 id="spacing">Username</h5>
+        <input type="text" class="input-signup-username" />
+        <div class="valid_box" id="valid_username"></div>
+        <h5 id="spacing">Email</h5>
+        <input type="email" class="input-signup-email" />
+        <div class="valid_box" id="valid_email"></div>
+        <h5 id="spacing">Password</h5>
+        <input type="password" class="input-signup-password" />
+        <i class="fas fa-eye" id="hide_showsignup"></i>
+        <div class="valid_box"></div>
+        <h5 id="spacing">Confirm Password</h5>
+        <input type="password" class="input-confirm-password" />
+        <div class="valid_box" id="valid_password"></div>
+        <div class="fhs-register-term">
+          <input type="checkbox" class="checkbox">
+          Bằng việc đăng ký bạn đã đồng ý với Fahasa về Điều khoản dịch vụ &nbsp;&amp;&nbsp; Chính sách bảo mật
+        </div>
+        <button type="submit" onclick="send()">Create account</button>
+      </form>
+      
+      <a href="login.html" class="signup__registerButton">Do you already have an account ?</a>
+    </div>
+  </div>
+</body>
+<script src="signup.js"></script>
+</html>
