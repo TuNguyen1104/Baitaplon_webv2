@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="baitaplon.css">
     <!-- <link rel="stylesheet" href="global.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "160618900463778");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 </head>
 
 <body>
@@ -1278,6 +1308,85 @@
             </div>
         </div>
     </div>
+    <footer>
+            <div class="row">
+                <div class="box">
+                    <div class="col-1">
+                        <h1><p class="VN">THEO DÕI CHÚNG TÔI</p><p class="EN">FOLLOW US</p></h1><br>                       
+                         <i class="fab fa-facebook-f"></i>
+                         <i class="fab fa-instagram"></i>
+                         <i class="fab fa-youtube"></i>
+                         <i class="fab fa-whatsapp"></i>   
+                         <i class="fab fa-snapchat"></i>              
+                    </div>
+                    <div class="col-2">
+                        <h1 class="VN">DANH MỤC</h1><h1 class="EN">CATEGORY</h1><br>
+                        <a href="#"><p class="VN">Truyện tranh</p><p class="EN">Comics</p></a><br>
+                        <a href="#"><p class="VN">Tiểu thuyết</p><p class="EN">Novels</p></a><br>
+                        <a href="#"><p class="VN">Khoa học thường thức</p><p class="EN">Life sciences</p></a><br>
+                        <a href="#"><p class="VN">Sách tham khảo</p><p class="EN">Reference books</p></a>
+                    </div>
+                    <div class="col-3">
+                        <h1 class="VN">HỖ TRỢ</h1><h1 class="EN">HELP</h1><br>
+                        <a href="#"><p class="VN">Điều khoản sử dụng</p><p class="EN">Terms of use</p></a><br>
+                        <a href="#"><p class="VN">Đường dây nóng</p><a href="#"><p class="EN">Hotline</p></a><br>
+                        <a href="#"><p class="VN">Chính sách hoàn tiền</p><p class="EN">Refund policy</p></a><br>
+                        <a href="#"><p class="VN">Cách thức mua hàng</p><p class="EN">How to purchase</p></a><br>
+                        <a href="#"><p class="VN">Chính sách bảo mật tài khoản</p><p class="EN">Account security policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách bảo mật thanh toán</p><p class="EN">Payment security policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách quảng cáo</p><p class="EN"> Advertising policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách bảo hành-bồi hoàn</a><p class="EN">Warranty-refund</p></a><br>
+                        <a href="#"><p class="VN">Chính sách vận chuyển</p><p class="EN">Shipping policy</p></a><br>
+                        <a href="#"><p class="VN">Chính sách khách sỉ</p><p class="EN">Wholesale policy</p></a><br>
+                </div>
+                <div class="col-4">
+                     <h1><p class="VN">THANH TOÁN</p><p class="EN">PAYMENT</p></h1><br>
+                     <p class="VN" style="text-align: center; text-decoration: underline;">Ví điện tử</p><p class="EN" style="text-align: center; text-decoration: underline;">Electronic wallet</p><br>
+                        <img src="/image/momopay.png" style="width: 70px;">
+                        <img src="/image/shopeepay.png" style="width: 90px;">
+                        <img src="/image/zalopay.png" style="width: 90px;">
+                     <p class="VN" style="text-align: center; text-decoration: underline;">Ngân hàng</p><p class="EN" style="text-align: center; text-decoration: underline;">Bank</p><br>
+                    <img src="/image/bidv.png" style="width: 100px;">
+                    <img src="/image/agribank.png" style="width: 70px;">
+                    <img src="/image/techcombank.png" style="width: 80px;">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="box">
+                <div class="col-6">
+                    <h1><p class="VN">VẬN CHUYỂN</p><p class="EN">SHIPPING</p><br>
+                        <img src="/image/ghn.png" style="width: 90px;">
+                        <img src="/image/vnpost.png" style="width: 90px;">
+                </div>
+                <div class="col-5">
+                    <h1><p class="VN">HỆ THỐNG CỬA HÀNG</p><p class="EN">STORE SYSTEMS</p></h1><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/V%C4%83n+Mi%C3%AA%CC%81u+%E2%80%93+Qu%C3%B4%CC%81c+T%C6%B0%CC%89+Gia%CC%81m/@21.0281175,105.8356692,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab9926e7bd67:0x580e078874d5df1e!8m2!3d21.0281175!4d105.8356692!16zL20vMGI5aGp6?entry=ttu"><p class="VN">Cơ sở I: Số 58 Phố Quốc Tử Giám, Phường Văn Miếu, Quận Đống Đa, TP Hà Nội, Việt Nam</p><p class="EN">Store I: No. 58 Quoc Tu Giam Street, Van Mieu Ward, Dong Da District, Hanoi City, Vietnam</p></a><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/H%E1%BB%93+G%C6%B0%C6%A1m+(Hoa%CC%80n+Ki%C3%AA%CC%81m)/@21.0079926,105.832805,15z/data=!4m22!1m15!4m14!1m6!1m2!1s0x3135ab976ee4d26b:0xd99e913dac7532ef!2zTE9UVEUgTWFydCBXZXN0IExha2UsIFThuqduZyBCMSwgTE9UVEUgTWFsbCwgMjcyIFbDtSBDaMOtIEPDtG5nLCBRdeG6rW4gVMOieSBI4buTIChWw6BvIGPhu5VuZyA2ODMgTOG6oWMgTG9uZyBRdcOibiwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!2m2!1d105.8117286!2d21.0763015!1m6!1m2!1s0x3135ab9926e7bd67:0x580e078874d5df1e!2zVsSDbiBNacOqzIF1IOKAkyBRdcO0zIFjIFTGsMyJIEdpYcyBbSwgNTggUC4gUXXhu5FjIFThu60gR2nDoW0sIFbEg24gTWnhur91LCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!2m2!1d105.8356692!2d21.0281175!3m5!1s0x3135ac69f861af3f:0x331250d72cd2fa28!8m2!3d21.0284743!4d105.8525795!16s%2Fg%2F1td7ksg7?entry=ttu"><p class ="VN">Cơ sở II: Số 1-8 Phố Lê Thái Tổ, Phường Hàng Trống, Quận Hoàn Kiếm, TP Hà Nội, Việt Nam</p><p class="EN">Store II: No. 1-8 Le Thai To Street, Hang Trong Ward, Hoan Kiem District, Hanoi City, Vietnam</p></a><br>  
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/B%E1%BA%A3o+t%C3%A0ng+3D+Art+In+Paradise/@15.900997,108.1243029,12z/data=!4m15!1m8!3m7!1s0x314219c792252a13:0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!3b1!8m2!3d16.0544068!4d108.2021667!16s%2Fg%2F11bc5hq_qy!3m5!1s0x314217f750645271:0x91c392fc753f0fb0!8m2!3d16.0954282!4d108.2431088!16s%2Fg%2F11d_d3m0pj?entry=ttu"><p class="VN">Cơ sở III: Lô 10, Trần Nhân Tông, Phường Thọ Quang, Quận Sơn Trà, TP Đà Nẵng, Việt Nam</p><p class="EN">Store III: Lot 10, Tran Nhan Tong, Tho Quang Ward, Son Tra District, Da Nang City, Vietnam</p></a><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/B%E1%BA%A3o+t%C3%A0ng+Ch%E1%BB%A9ng+t%C3%ADch+Chi%E1%BA%BFn+tranh/@10.7684393,106.686184,15.25z/data=!4m15!1m8!3m7!1s0x317529292e8d3dd1:0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!3b1!8m2!3d10.8230989!4d106.6296638!16zL20vMGhuNGg!3m5!1s0x31752f30a23708cf:0x7cd94adf2b1474aa!8m2!3d10.7795106!4d106.6920916!16s%2Fm%2F02pt71k?entry=ttu"><p class="VN">Cơ sở IV: Số 1 Lê Lợi, Phường 6, Quận 3, Thành phố Hồ Chí Minh, Việt Nam</p><p class="EN">Store IV: No. 1 Le Loi, Ward 6, District 3, Ho Chi Minh City, Vietnam</p></a><br>
+                    <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Homestay+Can+Tho-Green+Sunshine/@10.0341844,105.7163702,13z/data=!4m19!1m8!3m7!1s0x31a0629f6de3edb7:0x527f09dbfb20b659!2zQ-G6p24gVGjGoSwgTmluaCBLaeG7gXUsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!3b1!8m2!3d10.0451618!4d105.7468535!16zL20vMDNmY20z!3m9!1s0x31a089e57c0b50b9:0xc823bfc92f745f4e!5m3!4m1!1i2!5b1!8m2!3d10.0507988!4d105.7487686!16s%2Fg%2F11fqpq78r9?entry=ttu"><p class="VN">Cơ sở V: Số 2 Đường 1, Phường An Thới, Quận Bình Thủy, TP Cần Thơ, Việt Nam</p><p class="EN">Store V: No. 2 Street 1, An Thoi Ward, Binh Thuy District, Can Tho City, Vietnam</p></a><br><br>                                  
+                </div>
+                <div class="col-7">
+                    <h1><p class="VN">TẢI ỨNG DỤNG</p><p class="EN">DOWNLOAD</p></h1><br>
+                    <div class="box-1">
+                        <div class="col-8">
+                            <img src="/image/qr.png" style="width: 100px;">
+                        </div>
+                        <div class="col-9">
+                            <div class="row">
+                                <img src="/image/appstore.png" style="height: 25px;"><br><br>
+                            </div>
+                            <div class="row">
+                                <img src="/image/googleplay.png" style="height: 25px;">
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+            </div>
+            <div class="row"><h2><p class="VN">Bản quyền thuộc về nhóm 15</p><p class="EN">Copyright belongs to group 15</p></h2></div>                 
+        </footer>
     <div class="overlay"></div>
     <script src="cart.js"></script>
     <script src="slide.js"></script>
