@@ -1323,6 +1323,9 @@ input:focus {
     .profile-child {
         display: none;
     }
+a{
+    color: black;
+}
 
     .headerComics i:nth-child(2) {
         position: absolute;
