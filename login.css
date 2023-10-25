@@ -50,10 +50,7 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 20px;
-}
-form{
-  position: relative;
+  margin-bottom: 10px;
 }
 #hide_show{
   position: relative;
