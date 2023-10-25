@@ -1331,7 +1331,9 @@ input:focus {
         color: #921D6B;
         font-size: 35px;
     }
-
+    a{
+        color: black;
+    }
     .profile {
         display: none;
     }
