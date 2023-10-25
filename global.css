@@ -1305,7 +1305,9 @@ input:focus {
         color: #921D6B;
         font-size: 35px;
     }
-
+    a{
+        color: black;
+    }
     .profile {
         display: none;
     }
@@ -1326,7 +1328,7 @@ input:focus {
         font-size: 27px;
         font-style: italic;
     }
-
+    
     .headerComics p:nth-child(4) {
         position: absolute;
         right: 27%;
