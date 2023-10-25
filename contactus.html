@@ -586,10 +586,13 @@
             <label for="rate"><p class="VN">Đánh giá:</p><p class="EN">Rate:</p></label>
             <input id="rate" name="rate" placeholder="Từ 1-5" style="display: inline;"></input><br><br>   
             <label for="think"><p class="VN" style="text-align: center;">Cảm nghĩ:</p><p class="EN" style="text-align: center;">Comments</p></label>
-            <textarea name="think" id="think" cols="30" rows="5"></textarea>  
+            <textarea name="think" id="think" cols="30" rows="5"></textarea>
+            <label for="phone"><p class="VN" style="text-align: center;>Số điện thoại:</p><p class="EN" style="text-align: center;>Phone:</p></label>
+            <input id="number" name="number" placeholder="VD: 0901234567"></input>
+            <label for="email"><p class="VN" style="text-align: center;">Email:</p><p class="EN" style="text-align: center;>Emaill:</p></label>
+            <input id="email" name="email" placeholder="VD: ttt123@gmail.com"></input>
           <input type="submit" name="submit" id="submit" value="Send">
         </form>
-
         </main>
         <div class="box1">
           <div class="col--1">
@@ -697,6 +700,37 @@
             </div>
             <div class="row"><h2><p class="VN">Bản quyền thuộc về nhóm 15</p><p class="EN">Copyright belongs to group 15</p></h2></div>                 
         </footer>
+    <script>
+        function check(){
+    var checkrate = /[1-5]/;
+    var checknumber = /[0-9]/;
+    var checkemail = /^[\w]+@[\w]+\.[\w]+$/;
+    var get_city = document.getElementById("city").value
+    var get_name = document.getElementById("name").value;
+    var get_think = document.getElementById("think").value;
+    var get_rate = document.getElementById("rate").value;
+    var get_number = document.getElementById("number").value;
+    var get_email = document.getElementById("email").value;
+    if (get_name === "" || get_rate === "" || get_think === "" || get_city==="" || get_number="" || get_email="" ){
+        alert("Bạn vui lòng điền đầy đủ thông tin!");
+        return false;
+    }
+    if (!checkrate.test(get_rate)){
+        alert("Bạn vui lòng đánh giá lại!");
+        return false;
+    }
+    if (!checkrate.test(get_number)){
+        alert("Bạn vui lòng nhập lại số điện thoại!");
+        return false;
+    }
+    if (!checkrate.test(get_email)){
+        alert("Bạn vui lòng nhập lại email!");
+        return false;
+    }
+    alert("Cảm ơn bạn đã góp ý!!!")
+    return true;
+}
+    </script>
         <script src="mobile_translate.js"></script>
         <script src="responsive_navbar.js"></script>
         <script src="search.js"></script>
